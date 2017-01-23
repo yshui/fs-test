@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.8.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>sql</Title>
+    <LastModified>2017-01-23 03:01:24</LastModified>
+    <TestClient>Phoronix Test Suite v6.8.0 (Tana)</TestClient>
+    <Description>ext4</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>nilfs</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: nilfs, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-21 02:16:37</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>ext4</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-23 02:16:26</TimeStamp>
+    <TestClientVersion>6.8.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/sqlite-1.9.0</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.8.10.2</AppVersion>
+    <Arguments>/home/test/x</Arguments>
+    <Description>Test Target: /home/test/x</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>197.58</Value>
+        <RawString>198.24286913872:197.30372905731:197.20701408386</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lreadline -lcurses -ldl -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>448.52</Value>
+        <RawString>540.56007194519:430.62561893463:424.96407294273:436.0595741272:437.27103710175:421.64219403267</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lreadline -lcurses -ldl -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

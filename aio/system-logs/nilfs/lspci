@@ -1,0 +1,135 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	Xeon E3-1200 v3 Processor DRAM Controller [0c08]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	06
+Driver:	ie31200_edac
+Module:	ie31200_edac
+
+Slot:	00:14.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family USB xHCI [8c31]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+ProgIf:	30
+Driver:	xhci_hcd
+Module:	xhci_pci
+
+Slot:	00:19.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	Ethernet Connection I217-LM [153a]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [153a]
+Rev:	05
+Driver:	e1000e
+Module:	e1000e
+
+Slot:	00:1a.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family USB EHCI #2 [8c2d]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+ProgIf:	20
+Driver:	ehci-pci
+Module:	ehci_pci
+
+Slot:	00:1c.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family PCI Express Root Port #1 [8c10]
+Rev:	d5
+Driver:	pcieport
+Module:	shpchp
+
+Slot:	00:1c.1
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family PCI Express Root Port #2 [8c12]
+Rev:	d5
+Driver:	pcieport
+Module:	shpchp
+
+Slot:	00:1d.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family USB EHCI #1 [8c26]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+ProgIf:	20
+Driver:	ehci-pci
+Module:	ehci_pci
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	C222 Series Chipset Family Server Essential SKU LPC Controller [8c52]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+Driver:	lpc_ich
+Module:	lpc_ich
+
+Slot:	00:1f.2
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] [8c02]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+
+Slot:	00:1f.3
+Class:	SMBus [0c05]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series/C220 Series Chipset Family SMBus Controller [8c22]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+Driver:	i801_smbus
+Module:	i2c_i801
+
+Slot:	00:1f.6
+Class:	Signal processing controller [1180]
+Vendor:	Intel Corporation [8086]
+Device:	8 Series Chipset Family Thermal Management Controller [8c24]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	05
+
+Slot:	01:00.0
+Class:	PCI bridge [0604]
+Vendor:	ASPEED Technology, Inc. [1a03]
+Device:	AST1150 PCI-to-PCI Bridge [1150]
+Rev:	03
+Module:	shpchp
+
+Slot:	02:00.0
+Class:	VGA compatible controller [0300]
+Vendor:	ASPEED Technology, Inc. [1a03]
+Device:	ASPEED Graphics Family [2000]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [0801]
+Rev:	30
+Driver:	ast
+Module:	ast
+
+Slot:	03:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	I210 Gigabit Network Connection [1533]
+SVendor:	Super Micro Computer Inc [15d9]
+SDevice:	Device [1533]
+Rev:	03
+Driver:	igb
+Module:	igb
+

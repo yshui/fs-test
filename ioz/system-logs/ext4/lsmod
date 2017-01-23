@@ -1,0 +1,91 @@
+Module                  Size  Used by
+nilfs2                200704  0
+cfg80211              495616  0
+rfkill                 20480  2 cfg80211
+ipmi_ssif              24576  0
+intel_rapl             20480  0
+x86_pkg_temp_thermal    16384  0
+intel_powerclamp       16384  0
+coretemp               16384  0
+kvm_intel             188416  0
+kvm                   516096  1 kvm_intel
+irqbypass              16384  1 kvm
+crct10dif_pclmul       16384  0
+crc32_pclmul           16384  0
+crc32c_intel           24576  0
+ghash_clmulni_intel    16384  0
+aesni_intel           167936  0
+aes_x86_64             20480  1 aesni_intel
+lrw                    16384  1 aesni_intel
+gf128mul               16384  1 lrw
+glue_helper            16384  1 aesni_intel
+ablk_helper            16384  1 aesni_intel
+e1000e                229376  0
+cryptd                 20480  3 ablk_helper,ghash_clmulni_intel,aesni_intel
+ast                    57344  1
+igb                   188416  0
+joydev                 20480  0
+ptp                    20480  2 igb,e1000e
+ttm                    86016  1 ast
+iTCO_wdt               16384  0
+pps_core               20480  1 ptp
+drm_kms_helper        126976  1 ast
+drm                   294912  4 ast,ttm,drm_kms_helper
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+fb_sys_fops            16384  1 drm_kms_helper
+iTCO_vendor_support    16384  1 iTCO_wdt
+input_leds             16384  0
+mousedev               20480  0
+dca                    16384  1 igb
+i2c_algo_bit           16384  2 igb,ast
+led_class              16384  1 input_leds
+evdev                  24576  3
+mac_hid                16384  0
+i2c_i801               24576  0
+lpc_ich                24576  0
+ie31200_edac           16384  0
+intel_cstate           16384  0
+i2c_smbus              16384  1 i2c_i801
+shpchp                 32768  0
+pcspkr                 16384  0
+edac_core              45056  1 ie31200_edac
+intel_rapl_perf        16384  0
+fan                    16384  0
+fjes                   28672  0
+battery                20480  0
+button                 16384  0
+thermal                20480  0
+tpm_tis                16384  0
+tpm_tis_core           20480  1 tpm_tis
+tpm                    36864  2 tpm_tis,tpm_tis_core
+video                  36864  0
+ipmi_si                53248  0
+ipmi_msghandler        40960  2 ipmi_ssif,ipmi_si
+sch_fq_codel           20480  6
+ip_tables              28672  0
+x_tables               28672  1 ip_tables
+ext4                  524288  3
+crc16                  16384  1 ext4
+jbd2                   90112  1 ext4
+fscrypto               24576  1 ext4
+mbcache                16384  4 ext4
+sr_mod                 24576  0
+cdrom                  53248  1 sr_mod
+uas                    24576  0
+usb_storage            61440  1 uas
+hid_generic            16384  0
+usbhid                 49152  0
+hid                   114688  2 hid_generic,usbhid
+sd_mod                 36864  4
+ahci                   36864  3
+libahci                28672  1 ahci
+libata                208896  2 ahci,libahci
+xhci_pci               16384  0
+ehci_pci               16384  0
+scsi_mod              159744  5 sd_mod,usb_storage,libata,uas,sr_mod
+xhci_hcd              172032  1 xhci_pci
+ehci_hcd               73728  1 ehci_pci
+usbcore               208896  7 usbhid,usb_storage,ehci_hcd,xhci_pci,uas,xhci_hcd,ehci_pci
+usb_common             16384  1 usbcore

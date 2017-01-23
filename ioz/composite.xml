@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.8.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>ioz</Title>
+    <LastModified>2017-01-21 03:07:55</LastModified>
+    <TestClient>Phoronix Test Suite v6.8.0 (Tana)</TestClient>
+    <Description>ext4</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>nilfs</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: nilfs, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-20 01:55:22</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>ext4</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-21 02:46:26</TimeStamp>
+    <TestClientVersion>6.8.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 1m -s 4096M -i0 -i1</Arguments>
+    <Description>Record Size: 1MB - File Size: 4GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>8482.20</Value>
+        <RawString>8611.4072265625:8456.0673828125:8379.1201171875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>8546.74</Value>
+        <RawString>8407.6572265625:8348.9912109375:9015.1953125:8533.9521484375:8427.8955078125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 4096M -i0 -i1</Arguments>
+    <Description>Record Size: 4Kb - File Size: 4GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>7912.36</Value>
+        <RawString>7957.353515625:8103.6357421875:7676.10546875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>8028.49</Value>
+        <RawString>8129.5654296875:7814.376953125:8141.5205078125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 1m -s 4096M -i0</Arguments>
+    <Description>Record Size: 1MB - File Size: 4GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>105.51</Value>
+        <RawString>106.2265625:105.279296875:105.0234375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>131.52</Value>
+        <RawString>132.1220703125:131.1318359375:131.310546875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 4096M -i0</Arguments>
+    <Description>Record Size: 4Kb - File Size: 4GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>104.15</Value>
+        <RawString>104.5458984375:104.2197265625:103.67578125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>130.44</Value>
+        <RawString>130.716796875:130.126953125:130.4736328125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 64k -s 4096M -i0 -i1</Arguments>
+    <Description>Record Size: 64Kb - File Size: 4GB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>9702.98</Value>
+        <RawString>9902.1875:8958.3330078125:10001.810546875:9559.263671875:9911.2421875:9885.0498046875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>8651.57</Value>
+        <RawString>8694.5078125:8837.3359375:8422.8544921875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 64k -s 4096M -i0</Arguments>
+    <Description>Record Size: 64Kb - File Size: 4GB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>101.27</Value>
+        <RawString>101.318359375:101.0458984375:101.453125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>128.90</Value>
+        <RawString>129.068359375:128.93359375:128.697265625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

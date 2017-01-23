@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.8.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>fsm</Title>
+    <LastModified>2017-01-23 02:10:35</LastModified>
+    <TestClient>Phoronix Test Suite v6.8.0 (Tana)</TestClient>
+    <Description>ext4</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>nilfs</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: nilfs, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-20 21:43:50</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>ext4</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-23 01:40:00</TimeStamp>
+    <TestClientVersion>6.8.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.1</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 4000 -D 32</Arguments>
+    <Description>Test: 4000 Files, 32 Sub Dirs, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>38.27</Value>
+        <RawString>38.3:38.4:38.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>22.80</Value>
+        <RawString>22.7:22.8:22.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.1</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 5000 -t 4</Arguments>
+    <Description>Test: 5000 Files, 1MB Size, 4 Threads</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>45.73</Value>
+        <RawString>46:45.9:45.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>46.40</Value>
+        <RawString>46.4:46.4:46.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

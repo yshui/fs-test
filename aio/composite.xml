@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.8.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>aio</Title>
+    <LastModified>2017-01-21 02:43:26</LastModified>
+    <TestClient>Phoronix Test Suite v6.8.0 (Tana)</TestClient>
+    <Description>ext4</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>nilfs</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: nilfs, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-20 01:52:41</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>ext4</Identifier>
+    <Hardware>Processor: Intel Xeon E3-1231 v3 @ 3.80GHz (8 Cores), Motherboard: Supermicro X10SLL-F v1.02, Chipset: Intel Xeon E3-1200 v3 DRAM, Memory: 16384MB, Disk: 1000GB TOSHIBA MG03ACA1, Graphics: ASPEED ASPEED Family, Network: Intel Connection I217-LM</Hardware>
+    <Software>OS: Arch Linux, Kernel: 4.8.13-1-ARCH (x86_64), Compiler: GCC 6.3.1 20170109, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>test</User>
+    <TimeStamp>2017-01-21 02:41:41</TimeStamp>
+    <TestClientVersion>6.8.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--disable-libssp --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --disable-werror --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-gnu-indirect-function --enable-gnu-unique-object --enable-install-libiberty --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-libmpx --enable-lto --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-isl --with-linker-hash-style=gnu","disk-scheduler":"CFQ","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/aio-stress-1.1.1</Identifier>
+    <Title>AIO-Stress</Title>
+    <AppVersion>0.21</AppVersion>
+    <Arguments>-o 2</Arguments>
+    <Description>Test: Random Write</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>nilfs</Identifier>
+        <Value>101.40</Value>
+        <RawString>102.76:100.66:100.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -laio"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>ext4</Identifier>
+        <Value>3343.21</Value>
+        <RawString>3259.2:3604.79:3470.59:3131.26:3324.88:3268.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -laio"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
